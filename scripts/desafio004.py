@@ -1,0 +1,11 @@
+#corrigido pelo professor:
+a = input('Digite algo: ')
+print('O tipo primitivo desta variável é:', type(a))
+print('Só tem espaços? ', a.isspace())
+print('É um número? ', a.isnumeric())
+print('É alfabético? ', a.isalpha())
+print('É alfanumérico? ', a.isalnum())
+print('Está totalmente em caixa alta? ', a.isupper())
+print('Está totalmente em minúsculo? ', a.islower())
+print('Está capitalizada? ', a.istitle())
+#a váriavel A esta como objeto, e estão sendo trabalhados os métodos (a.isxxx)
