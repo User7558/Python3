@@ -19,5 +19,3 @@ elif i == 18:
 else:
   f = i - 18 
   print(f'Seu alistamento esta atrasado em {f} anos.')
-
-
