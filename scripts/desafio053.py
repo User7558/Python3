@@ -3,9 +3,9 @@ Equilátero - todos os lados iguais
 Isósceles - dois lados iguais
 Escaleno - todos os lados diferentes'''
 #
-base = float(input('Informe o tamanho da base: '))
-lado1 = float(input('Informe o tamanho do primeiro lado: '))
-lado2 = float(input('Informe o tamanho do segundo lado: '))
+base = float(input('Informe o tamanho do primeiro lado: '))
+lado1 = float(input('Informe o tamanho do segundo lado: '))
+lado2 = float(input('Informe o tamanho do terceiro lado: '))
 
 if base < lado1 + lado2 and lado1 < base + lado2 and lado2 < base + lado1:
   print('O triângulo É possivel neste caso.')
