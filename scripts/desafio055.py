@@ -6,8 +6,9 @@
 #
 x = float(input('Qual o preço do produto que deseja comprar? R$'))
 fp = int(input('''Qual a forma de pagamento?
-[1] Dinheiro ou cheque (oferece 10% de desconto)
+[1] Dinheiro
 [2] Cartão
+[3] Cheque
 ------------------------------------------------
 R: '''))
 
@@ -17,9 +18,6 @@ if fp==1:
     print(f'O desconto oferecido graças a forma de pagamento de seu produto foi de 10%, o valor passará a ser R${x:.2f}.')
 elif fp==2:
     p = int(input('''Em quantas parcelas pagará seu produto?
-[1] À vista
-[2] 2x
-[3] 3x ou mais
 ---------------
 R: '''))
     if p==1:
@@ -27,8 +25,14 @@ R: '''))
         x = x-d
         print(f'O desconto oferecido graças a forma de pagamento de seu produto foi de 5%, o valor passará a ser R${x:.2f}.')
     elif p==2:
-        print(f'A forma de pagamento escolhida não dá direito a desconto, o valor a ser pago será de R${x:.2f}.')
-    elif p==3:
+        parc= x/p
+        print(f'A forma de pagamento escolhida não dá direito a desconto, o valor a ser pago será de R${x:.2f}, parcelado em {p} vezes de R${parc:.2f}.')
+    elif p>=3:
         d = (x*20)/100
         x += d
-        print(f'O juros agregado graças a forma de pagamento de seu produto foi de 20%, o valor passará a ser R${x:.2f}.')
+        parc=x/p
+        print(f'O juros agregado graças a forma de pagamento de seu produto foi de 20%, o valor passará a ser R${x:.2f}, parcelado em {p} vezes de R%{parc:.2f}.')
+else:
+    d = (x*10)/100
+    x = x-d
+    print(f'O desconto oferecido graças a forma de pagamento de seu produto foi de 10%, o valor passará a ser R${x:.2f}.')
