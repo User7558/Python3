@@ -24,20 +24,20 @@ print('PÔ!')
 sleep(0.2)
 
 if p==x:
-    print(f'O usuário e a máquina pensaram igual, ambos jogaram {x}! \nO resultado foi: EMPATE.')
+    print(f'O usuário e a máquina pensaram igual, ambos jogaram {x}! \nO resultado foi: \033[1;95mEMPATE.\033[m')
 elif p!=x:
     if p=='pedra' and x=='papel':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: A MÁQUINA GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mA MÁQUINA GANHOU.\033[m')
     elif p=='pedra' and x=='tesoura':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: O USUÁRIO GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mO USUÁRIO GANHOU.\033[m')
     elif p=='papel' and x=='pedra':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: O USUÁRIO GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mO USUÁRIO GANHOU.\033[m')
     elif p=='papel' and x=='tesoura':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: A MÁQUINA GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mA MÁQUINA GANHOU.\033[m')
     elif p=='tesoura' and x=='pedra':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: A MÁQUINA GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mA MÁQUINA GANHOU.\033[m')
     elif p=='tesoura' and x=='papel':
-        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: O USUÁRIO GANHOU.')
+        print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mO USUÁRIO GANHOU.\033[m')
 
 sleep(1)
 print('Foi bom jogar com você, até!')
