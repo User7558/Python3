@@ -38,6 +38,5 @@ elif p!=x:
         print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mA MÁQUINA GANHOU.\033[m')
     elif p=='tesoura' and x=='papel':
         print(f'Jogada do usuário: {p} \nJogada da máquina: {x} \nO resultado foi: \033[1;95mO USUÁRIO GANHOU.\033[m')
-
-sleep(1)
-print('Foi bom jogar com você, até!')
+    else:
+        print('Essa jogada não existe! Por favor escolha \033[1;95mpedra, papel ou tesoura\033[m para jogar.')
