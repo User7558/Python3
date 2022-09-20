@@ -32,7 +32,9 @@ R: '''))
         x += d
         parc=x/p
         print(f'O juros agregado graças a forma de pagamento de seu produto foi de 20%, o valor passará a ser R${x:.2f}, parcelado em {p} vezes de R%{parc:.2f}.')
-else:
+elif fp==3:
     d = (x*10)/100
     x = x-d
     print(f'O desconto oferecido graças a forma de pagamento de seu produto foi de 10%, o valor passará a ser R${x:.2f}.')
+else:
+    print('Opção inválida para pagamento, por favor tente novamente.')
