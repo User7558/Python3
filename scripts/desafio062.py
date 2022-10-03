@@ -1,0 +1,1 @@
+#Desenvolva um programa que leia o primeiro termo e a razão de uma Progressão Aritmética
