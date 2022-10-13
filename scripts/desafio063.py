@@ -1,22 +1,17 @@
 #Desafio063: Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
 #
-from unittest import skip
+tot = 0
 
-div = 0
-d = 2
-n = int(input('Digite um número: '))
-if n <= 1:
-  print(f'O número {n} inserido não é um número primo.')
-else:
-  for c in range  (1, n):
-    if n%d!=0:
-      d += 1
-    else:
-      if d==n:
-        div = 0
-      else:
-        div += 1
-  if div >= 1:
-    print(f'O número {n} inserido não é um número primo.')
+n = int(input('Digite um número:'))
+for c in range (1,n+1):
+  if n%c == 0:
+    print('\033[33m', end=' ')
+    tot += 1
   else:
-    print(f'O número {n} inserido é um número primo.')
+    print('\033[34m', end=' ')
+  print(c, end=' ')
+print(f'\n\033[mO número {n} é divisível por {tot} números.')
+if tot==2:
+  print(f'Logo, {n} é um número primo.')
+else:
+  print(f'Logo, {n} não é um número primo.')

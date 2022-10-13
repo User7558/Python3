@@ -8,6 +8,6 @@ print('-=' * 25)
 print('\033[;49;34mMostrando os termos da Progressão Aritmética...\033[m')
 
 for c in range (0, 10):
-  print(pa)
+  print(pa, end=' -> ')
   pa += r
 print('Fim do programa.')
