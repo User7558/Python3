@@ -40,3 +40,9 @@ while menu != 5:
   elif menu == 4:
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite outro número: '))
+  elif menu == 5:
+    print('Saindo...')
+  else:
+    print('Resposta invalida, escolha as opções entre 1 e 5.')
+  print(' ')
+  sleep(1)

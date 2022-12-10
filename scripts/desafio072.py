@@ -4,7 +4,7 @@ pa = int(input('Digite o primeiro termo da Progressão Aritmética: '))
 r = int(input('Digite a razão da P.A.: '))
 c = 0
 
-print('-=' * 25)
+print('--' * 25)
 print('\033[;49;34mMostrando os termos da Progressão Aritmética...\033[m')
 
 while c != 10:
