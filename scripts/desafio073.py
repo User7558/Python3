@@ -2,18 +2,21 @@
 #
 pa = int(input('Digite o primeiro termo da Progressão Aritmética: '))
 r = int(input('Digite a razão da P.A.: '))
-t = 12
-usuario = 1
+c = 0
+total = 0
+mais = 10
 
-print('-=' * 25)
+print('--' * 25)
 print('\033[;49;34mMostrando os termos da Progressão Aritmética...\033[m')
+print('--' * 25)
 
-while usuario != 0:
-  print(pa, end=' -> ')
-  pa += r
-  t -= 1
-  if t == usuario:
-    usuario = int(input('Quantos termos quer mostrar? '))
-
+while mais != 0:
+  total += mais
+  while c <= total:
+    print(pa, end=' -> ')
+    pa += r
+    c += 1
+  print('PAUSA')
+  mais = int(input('Quantos termos você quer mostrar a mais? '))
 print('Fim do programa.')
-#para corrigir
+print(f'Progressão finalizada com {total} termos mostrados.')
